@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/saml2/idp/idp.iml" filepath="$PROJECT_DIR$/saml2/idp/idp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/saml2/idp-sp/idp-sp.iml" filepath="$PROJECT_DIR$/saml2/idp-sp/idp-sp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/saml2/saml2.iml" filepath="$PROJECT_DIR$/saml2/saml2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/saml2-spring-security.iml" filepath="$PROJECT_DIR$/.idea/saml2-spring-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/saml2/sp/sp.iml" filepath="$PROJECT_DIR$/saml2/sp/sp.iml" />
+    </modules>
+  </component>
+</project>
