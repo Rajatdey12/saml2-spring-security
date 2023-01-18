@@ -43,6 +43,7 @@ public class ServiceProviderController {
 	public String home(Model model) {
 		logger.info("Sample SP Application - You are logged in!");
 		populateModel(model);
+		System.out.println(model);
 		return "logged-in";
 	}
 
