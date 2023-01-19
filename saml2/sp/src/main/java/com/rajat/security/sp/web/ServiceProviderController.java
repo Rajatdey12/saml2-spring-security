@@ -8,6 +8,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.saml.SamlAuthentication;
 import org.springframework.security.saml.SamlTransformer;
 import org.springframework.security.saml.saml2.attribute.Attribute;
+import org.springframework.security.saml.saml2.authentication.Assertion;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -43,7 +44,7 @@ public class ServiceProviderController {
 	public String home(Model model) {
 		logger.info("Sample SP Application - You are logged in!");
 		populateModel(model);
-		System.out.println(model);
+//		System.out.println(model);
 		return "logged-in";
 	}
 
@@ -55,6 +56,7 @@ public class ServiceProviderController {
 			SamlAuthentication sa = (SamlAuthentication)authentication;
 			attributes = sa.getAssertion().getAttributes();
 			xml = transformer.toXml(sa.getAssertion());
+
 		}
 		model.addAttribute("attributes", attributes);
 		model.addAttribute("xml", prettyPrint(xml));
